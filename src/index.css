@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-burgundy: #721524;
+  --color-bordeaux-noir: #0B0204;
+  --color-bone: #FBF9F5;
+  --ease-apple: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-editorial: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html {
+  background-color: #0B0204;
+  color: #FBF9F5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background-color: #0B0204;
+  color: #FBF9F5;
+  overflow-x: hidden;
+}
+
+/* Custom Editorial Scrollbar in Deep Wine */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0204;
+}
+::-webkit-scrollbar-thumb {
+  background: #3A0912;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #721524;
+}
+
+/* Accessible visible focus indicator */
+:focus-visible {
+  outline: 2px solid #9E3C51;
+  outline-offset: 3px;
+}
+
+/* Apple-style button press */
+.pressable {
+  transition: transform 160ms var(--ease-apple), opacity 160ms var(--ease-apple);
+}
+.pressable:active {
+  transform: scale(0.97);
+}
+
+/* Subtle image zoom on hover */
+.editorial-img-container {
+  overflow: hidden;
+}
+.editorial-img-container img {
+  transition: transform 650ms cubic-bezier(0.16, 1, 0.3, 1), filter 650ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.editorial-img-container:hover img {
+  transform: scale(1.04);
+}
+
+/* Film grain overlay */
+.bg-grain {
+  background-image: radial-gradient(rgba(20, 18, 17, 0.05) 1px, transparent 0);
+  background-size: 24px 24px;
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+/* Modal and fade animations */
+@keyframes modalEnter {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 200ms ease-out forwards;
+}
+
+/* Hide scrollbar for category tabs */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
