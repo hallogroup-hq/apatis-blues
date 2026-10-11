@@ -36,7 +36,6 @@ export default function Navbar() {
     { name: 'Selected Content', href: '#reels' },
     { name: 'Events & Visits', href: '#events' },
     { name: 'Filosofi', href: '#philosophy' },
-    { name: 'Kolaborasi', href: '#inquiry' },
   ];
 
   return (

@@ -61,7 +61,7 @@ export default function Hero() {
                 href="#lookbook"
                 className="pressable inline-flex items-center justify-center bg-white/[0.04] hover:bg-white/[0.08] text-[#FBF9F5] border border-white/15 text-xs uppercase tracking-widest font-semibold px-8 py-4 rounded-full transition-all"
               >
-                Jelajahi Koleksi
+                Explore
               </a>
             </div>
 
