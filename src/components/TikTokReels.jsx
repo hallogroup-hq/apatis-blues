@@ -41,7 +41,7 @@ export default function TikTokReels() {
         <div className="flex flex-col sm:flex-row sm:items-end justify-between mb-16 gap-6 pb-8 border-b border-white/10">
           <div>
             <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-normal text-[#FBF9F5] leading-tight">
-              Selected Reels
+              Selected Content
             </h2>
             <p className="font-sans text-xs sm:text-sm text-[#B5ADA4] mt-2 font-light">
               Kurasi video dan visual styling personal di TikTok @.apatisblues.

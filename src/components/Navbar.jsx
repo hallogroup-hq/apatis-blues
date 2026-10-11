@@ -33,10 +33,10 @@ export default function Navbar() {
 
   const navLinks = [
     { name: 'Koleksi Brand', href: '#lookbook' },
-    { name: 'Video Reels', href: '#reels' },
-    { name: 'Runway & Event', href: '#events' },
+    { name: 'Selected Content', href: '#reels' },
+    { name: 'Events & Visits', href: '#events' },
     { name: 'Filosofi', href: '#philosophy' },
-    { name: 'Kontak', href: '#inquiry' },
+    { name: 'Kolaborasi', href: '#inquiry' },
   ];
 
   return (
@@ -104,7 +104,7 @@ export default function Navbar() {
               href="#inquiry"
               className="pressable inline-flex items-center bg-gradient-to-r from-burgundy-700 to-burgundy-600 hover:from-burgundy-600 hover:to-burgundy-500 text-[#FBF9F5] text-[11px] uppercase tracking-widest font-medium px-5 py-2 rounded-full border border-white/10 transition-all shadow-[0_2px_12px_rgba(114,21,36,0.35)]"
             >
-              Inisiasi Kolaborasi
+              Kolaborasi
             </a>
           </div>
 
@@ -192,7 +192,7 @@ export default function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
               className="pressable text-center bg-burgundy-700 hover:bg-burgundy-600 text-white text-xs uppercase tracking-widest font-semibold py-3.5 px-6 rounded-full"
             >
-              Inisiasi Kolaborasi
+              Kolaborasi
             </a>
           </div>
         </div>

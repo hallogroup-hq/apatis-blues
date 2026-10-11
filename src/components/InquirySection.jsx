@@ -7,7 +7,7 @@ export default function InquirySection() {
     brandName: '',
     contactName: '',
     email: '',
-    scope: 'Editorial Lookbook & Styling',
+    scope: 'Event Visit',
     timeline: 'Bulan Ini',
     notes: '',
   });
@@ -67,12 +67,9 @@ Terima kasih.`;
         
         {/* Header */}
         <div className="max-w-3xl mb-20">
-          <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-normal text-[#FBF9F5] leading-tight mb-6">
-            Inisiasi Kolaborasi & Diskusi
+          <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-normal text-[#FBF9F5] leading-tight">
+            Kolaborasi
           </h2>
-          <p className="font-sans text-xs sm:text-sm text-[#B5ADA4] leading-relaxed font-light">
-            Terbuka untuk kurasi lookbook styling, peragaan busana runway, aktivasi brand denim & menswear, serta visual direction independen.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
@@ -82,7 +79,7 @@ Terima kasih.`;
             
             <div className="bg-white/[0.03] rounded-[2rem] p-8 sm:p-10 border border-white/10 shadow-xl space-y-8">
               <h3 className="font-serif text-3xl text-[#FBF9F5]">
-                Saluran Langsung
+                Contact
               </h3>
               
               {/* Email */}
@@ -137,7 +134,7 @@ Terima kasih.`;
             {/* Social Channels */}
             <div className="bg-white/[0.03] rounded-[2rem] p-8 sm:p-10 border border-white/10 shadow-xl space-y-5">
               <h3 className="font-serif text-2xl text-[#FBF9F5]">
-                Kanal Sosial Resmi
+                Social Media
               </h3>
               <div className="grid grid-cols-2 gap-4">
                 <a
@@ -178,7 +175,7 @@ Terima kasih.`;
               Kirimkan Brief Kolaborasi
             </h3>
             <p className="font-sans text-xs sm:text-sm text-[#B5ADA4] mb-8 font-light">
-              Lengkapi informasi singkat proyek brand Anda. Sistem akan mengarahkan pesan langsung ke Dimas Rezza.
+              Lengkapi informasi singkat projek mu, kita coba untuk diskusi dan wujudkan bersama.
             </p>
 
             <form onSubmit={handleSubmit} className="space-y-6">
@@ -217,7 +214,7 @@ Terima kasih.`;
 
               <div>
                 <label htmlFor="email" className="block text-xs font-mono uppercase tracking-widest text-[#D49CA4] mb-2">
-                  Alamat Email Resmi *
+                  Alamat Email *
                 </label>
                 <input
                   type="email"
@@ -243,10 +240,12 @@ Terima kasih.`;
                     onChange={handleInputChange}
                     className="w-full bg-[#180408] border border-white/10 focus:border-rose-400 rounded-xl px-4 py-3 text-sm text-[#FBF9F5] outline-none transition-colors"
                   >
-                    <option value="Editorial Lookbook & Styling">Editorial Lookbook & Styling</option>
-                    <option value="Runway Attendance & Showcase">Runway Attendance & Showcase</option>
-                    <option value="Raw Denim Activation Campaign">Raw Denim Activation Campaign</option>
-                    <option value="Visual Direction & Endorsement">Visual Direction & Endorsement</option>
+                    <option value="Event Visit">Event Visit</option>
+                    <option value="Brand Campaign">Brand Campaign</option>
+                    <option value="Endorsement">Endorsement</option>
+                    <option value="Content Creation">Content Creation</option>
+                    <option value="Speaker">Speaker</option>
+                    <option value="Other">Other</option>
                   </select>
                 </div>
 

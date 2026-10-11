@@ -13,14 +13,11 @@ export default function Footer() {
         {/* Main Colophon Layout */}
         <div className="flex flex-col md:flex-row items-start md:items-end justify-between pb-16 border-b border-white/10 gap-10">
           <div>
-            <span className="font-mono text-[11px] uppercase tracking-[0.25em] text-[#D49CA4] block mb-3 font-medium">
-              Independent Fashion Archive
-            </span>
             <p className="font-serif text-4xl sm:text-5xl md:text-6xl font-normal tracking-tight text-[#FBF9F5] leading-none">
               APATIS BLUES
             </p>
             <p className="font-sans text-xs sm:text-sm text-[#B5ADA4] mt-3 font-light">
-              Dimas Rezza &bull; {creatorData.signatureTag} &bull; Bandung / Jakarta
+              Dimas Rezza &bull; {creatorData.signatureTag}
             </p>
           </div>
 
@@ -29,19 +26,19 @@ export default function Footer() {
               href="#lookbook"
               className="text-xs uppercase font-mono tracking-wider text-[#B5ADA4] hover:text-[#FBF9F5] transition-colors"
             >
-              Koleksi
+              Koleksi Brand
             </a>
             <a
               href="#reels"
               className="text-xs uppercase font-mono tracking-wider text-[#B5ADA4] hover:text-[#FBF9F5] transition-colors"
             >
-              Reels
+              Selected Content
             </a>
             <a
               href="#events"
               className="text-xs uppercase font-mono tracking-wider text-[#B5ADA4] hover:text-[#FBF9F5] transition-colors"
             >
-              Runway
+              Events & Visits
             </a>
             <a
               href="#philosophy"
@@ -53,7 +50,7 @@ export default function Footer() {
               href="#inquiry"
               className="text-xs uppercase font-mono tracking-wider text-[#B5ADA4] hover:text-[#FBF9F5] transition-colors"
             >
-              Kontak
+              Kolaborasi
             </a>
             <button
               type="button"

@@ -18,13 +18,9 @@ export default function RunwayEvents() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8 pb-8 border-b border-white/10">
           <div>
             <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl font-normal tracking-tight text-[#FBF9F5]">
-              Runway Showcases & Events
+              Events & Visits
             </h2>
           </div>
-
-          <p className="max-w-md font-sans text-xs sm:text-sm text-[#B5ADA4] leading-relaxed font-light">
-            Dokumentasi peragaan busana, showcase kurasi kultur denim, dan liputan media.
-          </p>
         </div>
 
         {/* 2-Column Luxury Editorial Grid */}

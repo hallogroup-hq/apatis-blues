@@ -52,16 +52,16 @@ export default function Hero() {
             {/* Call To Actions */}
             <div className="flex flex-wrap items-center gap-4">
               <a
-                href="#lookbook"
+                href="#inquiry"
                 className="pressable inline-flex items-center justify-center bg-burgundy-700 hover:bg-burgundy-600 text-[#FBF9F5] text-xs uppercase tracking-widest font-semibold px-8 py-4 rounded-full shadow-[0_4px_20px_rgba(114,21,36,0.4)] border border-white/10 transition-all"
               >
-                Jelajahi Koleksi Brand
+                Kolaborasi
               </a>
               <a
-                href="#reels"
+                href="#lookbook"
                 className="pressable inline-flex items-center justify-center bg-white/[0.04] hover:bg-white/[0.08] text-[#FBF9F5] border border-white/15 text-xs uppercase tracking-widest font-semibold px-8 py-4 rounded-full transition-all"
               >
-                Tonton Video Reels
+                Jelajahi Koleksi
               </a>
             </div>
 
